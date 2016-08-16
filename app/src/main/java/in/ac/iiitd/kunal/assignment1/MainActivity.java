@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+@SuppressWarnings("ALL")
 public class MainActivity extends AppCompatActivity {
 
     /*
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Variable Assignment
     Strings in Values
     Change Icon
-    Save Instance Bundle On Back Press and Rotate;
+    Save Instance Bundle On Back Press;
     */
     private static final String TAG = "QuizActivity";
     private static final String Value = "Value";
@@ -35,8 +36,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mQuestion = (TextView) findViewById(R.id.textViewer);
-        mValue = GiveNumber.GetNumber();
-        mQuestion.setText("Is" + mValue + "A Prime Number");
+
+        if(savedInstanceState==null)
+            mValue = GiveNumber.GetNumber();
+        else
+            mValue=savedInstanceState.getInt(Value);
+
+        mQuestion.setText("Is " + mValue + " A Prime Number");
 
         mFalseButton = (Button) findViewById(R.id.FalseButton);
         mFalseButton.setOnClickListener(new View.OnClickListener() {
@@ -102,6 +108,15 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putInt(Value,mValue);
     }
 
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.i(TAG, "Inside onRestoreInstance");
+
+    }
+
+
     @Override
     public void onStart() {
         super.onStart();
@@ -117,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-        Log.d(TAG, "Inside OnREsume");
+        Log.d(TAG, "Inside OnResume");
 
     }
 
@@ -138,4 +153,5 @@ public class MainActivity extends AppCompatActivity {
         super.onBackPressed();
         Log.d(TAG, "Inside OnBackPressed");
     }
+
 }

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Assignment1</string>
+    <string name="False">False</string>
+    <string name="True">True</string>
+    <string name="Next">Next</string>
+    <string name="Question">Question</string>
 </resources>

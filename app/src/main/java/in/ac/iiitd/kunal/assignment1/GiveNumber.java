@@ -4,39 +4,34 @@ package in.ac.iiitd.kunal.assignment1;
 import android.util.Log;
 import java.util.ArrayList;
 
-
-/**
- * Created by KunalSaini on 13-Aug-16.
- */
-
-
-
+@SuppressWarnings("ALL")
 public class GiveNumber {
     private static final String TAG = "GiveNumber";
-    private static ArrayList<Integer>Numbers ;
-    private static final int MAXIMUM=1000;
-    private static final int MINIMUM=1;
-    private static int randomNum;
-    private static ArrayList<Integer>Prime;
+    private static ArrayList<Integer>sNumbers ;
+    private static final int sMAXIMUM=1000;
+    private static final int sMINIMUM=1;
+    @SuppressWarnings("FieldCanBeLocal")
+    private static int sRandomNum;
+    private static ArrayList<Integer>sPrime;
 
     public static int GetNumber()
     {
-        randomNum = MINIMUM + (int)(Math.random() * MAXIMUM);
-        while(Numbers.contains(randomNum))
-            randomNum = MINIMUM + (int)(Math.random() * MAXIMUM);
-        Numbers.add(randomNum);
-        return randomNum;
+        sRandomNum = sMINIMUM + (int)(Math.random() * sMAXIMUM);
+        while(sNumbers.contains(sRandomNum))
+            sRandomNum = sMINIMUM + (int)(Math.random() * sMAXIMUM);
+        sNumbers.add(sRandomNum);
+        return sRandomNum;
 
     }
 
     static {
 
         //Need to Implement More Efficient Algorithm
-        Prime=new ArrayList<Integer>();
-        Numbers=new ArrayList<Integer>();
+        sPrime=new ArrayList<>();
+        sNumbers=new ArrayList<>();
         int i,k,j;
         Log.d(TAG,"I am in Static method");
-        for(i=MINIMUM;i<MAXIMUM;i++)
+        for(i=sMINIMUM;i<sMAXIMUM;i++)
         {
             k=0;
             for(j=2;j<i;j++)
@@ -49,17 +44,17 @@ public class GiveNumber {
             }
             if(k==0)
             {
-                Prime.add(i);
+                sPrime.add(i);
             }
         }
     }
 
     public static boolean IsPrime(int n)
     {
-        if(Prime.contains(n))
+        if(sPrime.contains(n))
             return  true;
-        else
-            return false;
+
+        return false;
     }
 
 }
