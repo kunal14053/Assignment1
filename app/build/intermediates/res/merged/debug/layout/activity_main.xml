@@ -19,6 +19,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/Question"
         android:gravity="center"
+        android:textSize="30dp"
+        android:paddingBottom="30dp"
         />
 
     <LinearLayout
@@ -33,6 +35,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/True"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/right"
             />
         <!--suppress AndroidUnknownAttribute, AndroidUnknownAttribute -->
         <Button
@@ -40,8 +44,9 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="@string/False"
-
+            android:drawableRight="@drawable/cross"
             />
     </LinearLayout>
     <!--suppress AndroidUnknownAttribute, AndroidUnknownAttribute -->
@@ -50,6 +55,8 @@
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Next"/>
+        android:text="@string/Next"
+        android:textSize="20dp"
+        android:drawableRight="@drawable/next" />
 
 </LinearLayout>

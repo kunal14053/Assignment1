@@ -4,4 +4,6 @@
     <string name="True">True</string>
     <string name="Next">Next</string>
     <string name="Question">Question</string>
+    <string name="Is">Is </string>
+    <string name="Prime"> A Prime Number</string>
 </resources>

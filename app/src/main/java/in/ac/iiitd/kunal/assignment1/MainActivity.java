@@ -9,25 +9,16 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-@SuppressWarnings("ALL")
+
 public class MainActivity extends AppCompatActivity {
 
-    /*
-    Include Images
-    Variable Assignment
-    Strings in Values
-    Change Icon
-    Save Instance Bundle On Back Press;
-    */
+
     private static final String TAG = "QuizActivity";
     private static final String Value = "Value";
-    private Button mTrueButton;
-    private Button mFalseButton;
-    private Button mNextButton;
     private TextView mQuestion;
     private int mPressFlag=0;
     private int mCheckFlag=0;
-    private Context mContext=this;
+    private final Context mContext=this;
     private int mValue=0;
 
     @Override
@@ -42,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
         else
             mValue=savedInstanceState.getInt(Value);
 
-        mQuestion.setText("Is " + mValue + " A Prime Number");
+        mQuestion.setText(R.string.Is + mValue + R.string.Prime);
 
-        mFalseButton = (Button) findViewById(R.id.FalseButton);
+        Button mFalseButton = (Button) findViewById(R.id.FalseButton);
         mFalseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mTrueButton = (Button) findViewById(R.id.TrueButton);
+        Button mTrueButton = (Button) findViewById(R.id.TrueButton);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,14 +72,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        mNextButton = (Button) findViewById(R.id.next_button);
+        Button mNextButton = (Button) findViewById(R.id.next_button);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "Clicked Next");
                 if(mCheckFlag==1){
                     mValue=GiveNumber.GetNumber();
-                    mQuestion.setText("Is"+" "+mValue+" "+"A Prime Number");
+                    mQuestion.setText(R.string.Is + mValue + R.string.Prime);
                     mPressFlag=0;
                     mCheckFlag=0;
                 }

@@ -4,15 +4,15 @@ package in.ac.iiitd.kunal.assignment1;
 import android.util.Log;
 import java.util.ArrayList;
 
-@SuppressWarnings("ALL")
-public class GiveNumber {
+
+class GiveNumber {
     private static final String TAG = "GiveNumber";
-    private static ArrayList<Integer>sNumbers ;
+    private static final ArrayList<Integer>sNumbers ;
     private static final int sMAXIMUM=1000;
     private static final int sMINIMUM=1;
     @SuppressWarnings("FieldCanBeLocal")
     private static int sRandomNum;
-    private static ArrayList<Integer>sPrime;
+    private static final ArrayList<Integer>sPrime;
 
     public static int GetNumber()
     {
@@ -51,10 +51,8 @@ public class GiveNumber {
 
     public static boolean IsPrime(int n)
     {
-        if(sPrime.contains(n))
-            return  true;
+        return sPrime.contains(n);
 
-        return false;
     }
 
 }
