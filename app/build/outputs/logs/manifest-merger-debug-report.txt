@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:4:5-44
 		INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml
@@ -16,13 +16,16 @@ ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\
 		INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml
 		INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml
 application
-ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:6:5-21:19
+ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from [com.android.support:appcompat-v7:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:10:9-41
@@ -52,6 +55,13 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
 		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:18:27-74
+meta-data#com.google.android.gms.version
+ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:22:9-24:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:24:13-66
+	android:name
+		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:23:13-58
 uses-sdk
 INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:21:5-23:78
@@ -60,6 +70,9 @@ MERGED from [com.android.support:support-vector-drawable:24.1.1] E:\@STUDIES\B-t
 MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-vector-drawable:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:23:9-75
