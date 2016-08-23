@@ -13,6 +13,7 @@
     android:orientation="vertical"
     tools:context="in.ac.iiitd.kunal.assignment1.MainActivity">
     <TextView
+        android:layout_marginTop="100dp"
         android:id="@+id/textViewer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,7 +58,40 @@
         android:layout_height="wrap_content"
         android:text="@string/Next"
         android:textSize="20sp"
+        android:layout_marginBottom="50dp"
         android:drawableRight="@drawable/next"
         tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/HintButton"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mHint"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/CheatButton"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mCheat"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>

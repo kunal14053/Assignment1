@@ -1,6 +1,7 @@
 package in.ac.iiitd.kunal.assignment1;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
             mValue = GiveNumber.GetNumber();
         else
             mValue = savedInstanceState.getInt(Value);
-
-        mQuestion.setText("Is " + mValue + " A Prime Number");
+        String s2="Is " + mValue + " A Prime Number";
+        mQuestion.setText(s2);
 
         Button mFalseButton = (Button) findViewById(R.id.FalseButton);
         mFalseButton.setOnClickListener(new View.OnClickListener() {
@@ -82,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Clicked Next");
                 if (mCheckFlag == 1) {
                     mValue = GiveNumber.GetNumber();
-                    mQuestion.setText("Is " + mValue + " A Prime Number");
+                    String s1="Is " + mValue + " A Prime Number";
+                    mQuestion.setText(s1);
                     mPressFlag = 0;
                     mCheckFlag = 0;
                 } else if (mPressFlag == 1)
@@ -92,6 +94,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button mHintButton=(Button)findViewById(R.id.HintButton);
+        mHintButton.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(MainActivity.this,Hint.class);
+                startActivity(i);
+            }
+        });
+
+        Button mCheatButton=(Button)findViewById(R.id.CheatButton);
+        mCheatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(MainActivity.this,Cheat.class);
+                startActivity(i);
+            }
+        });
 
     }
 

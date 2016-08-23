@@ -209,10 +209,10 @@
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="google_play_services_version">8115000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="Cheat">Let us Cheat</string>
     <string name="False">False</string>
-    <string name="Is">Is </string>
+    <string name="Hint">Show Hint</string>
     <string name="Next">Next</string>
-    <string name="Prime"> A Prime Number</string>
     <string name="Question">Question</string>
     <string name="True">True</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -279,6 +279,8 @@
     <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
     <string name="common_google_play_services_updating_title">Google Play services are updating</string>
     <string name="common_open_on_phone">Open on phone</string>
+    <string name="mCheat">Cheat</string>
+    <string name="mHint">Hint</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
