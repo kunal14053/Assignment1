@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     Toast Need to See
-
+    Static Analysis
 
     */
 
