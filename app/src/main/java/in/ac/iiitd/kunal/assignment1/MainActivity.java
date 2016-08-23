@@ -18,6 +18,13 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends AppCompatActivity {
 
+    /*
+
+
+    Toast Need to See
+
+
+    */
 
     private static final String TAG = "QuizActivity";
     private static final String Value = "Value";
@@ -26,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
     private int mCheckFlag = 0;
     private final Context mContext = this;
     private int mValue = 0;
+    private Toast mMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         mQuestion = (TextView) findViewById(R.id.textViewer);
 
         if (savedInstanceState == null)
@@ -46,12 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "Clicked False");
-                if (mCheckFlag == 0 && !GiveNumber.IsPrime(mValue)) {
+                if (!GiveNumber.IsPrime(mValue)) {
                     mCheckFlag = 1;
-                    Toast.makeText(mContext, "Correct!", Toast.LENGTH_SHORT).show();
+
+                    mMain.makeText(mContext, "Correct!", Toast.LENGTH_SHORT).show();
                 } else {
                     mCheckFlag = 0;
-                    Toast.makeText(mContext, "Wrong!", Toast.LENGTH_SHORT).show();
+
+                    mMain.makeText(mContext, "Wrong!", Toast.LENGTH_SHORT).show();
                 }
 
                 mPressFlag = 1;
@@ -63,13 +72,15 @@ public class MainActivity extends AppCompatActivity {
         mTrueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d(TAG, "Clicked False");
-                if (mCheckFlag == 0 && GiveNumber.IsPrime(mValue)) {
-                    mCheckFlag = 1;
-                    Toast.makeText(mContext, "Correct!", Toast.LENGTH_SHORT).show();
+                Log.d(TAG, "Clicked True");
+                if (GiveNumber.IsPrime(mValue)) {
+                    mCheckFlag=1;
+
+                    mMain.makeText(mContext, "Correct!", Toast.LENGTH_SHORT).show();
                 } else {
                     mCheckFlag = 0;
-                    Toast.makeText(mContext, "Wrong!", Toast.LENGTH_SHORT).show();
+
+                    mMain.makeText(mContext, "Wrong!", Toast.LENGTH_SHORT).show();
                 }
                 mPressFlag = 1;
             }
@@ -83,14 +94,15 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Clicked Next");
                 if (mCheckFlag == 1) {
                     mValue = GiveNumber.GetNumber();
-                    String s1="Is " + mValue + " A Prime Number";
+                    String s1 = "Is " + mValue + " A Prime Number";
                     mQuestion.setText(s1);
                     mPressFlag = 0;
                     mCheckFlag = 0;
-                } else if (mPressFlag == 1)
-                    Toast.makeText(mContext, "Your Answer Is Wrong", Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(mContext, "Please Make A Choice", Toast.LENGTH_SHORT).show();
+                } else if (mPressFlag == 1) {
+                    mMain.makeText(mContext, "Your Answer Is Wrong", Toast.LENGTH_SHORT).show();
+                } else {
+                    mMain.makeText(mContext, "Please Make A Choice", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -109,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(MainActivity.this,Cheat.class);
+                i.putExtra(Value,mValue);
                 startActivity(i);
             }
         });
