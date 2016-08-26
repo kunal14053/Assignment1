@@ -4,27 +4,27 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="179175341238156"
+    timestamp="133639055433244"
     token="-631263544035350698" >
 
     <task
         name="javac"
-        duration="666" />
+        duration="11635" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="652" />
+        duration="628" />
     <task
         name="verifier"
-        duration="205" />
+        duration="254" />
 
     <artifact
         location="E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="179175341238156" >
+    <build timestamp="133639055433244" >
         <artifact
             location="E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />

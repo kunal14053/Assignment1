@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\imgcheat.png",
+        "source": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\src\\main\\res\\drawable-xxxhdpi\\imgcheat.png"
+    },
+    {
         "merged": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -30,6 +34,10 @@
     {
         "merged": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png",
         "source": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\hintimg.png",
+        "source": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\src\\main\\res\\drawable-xxxhdpi\\hintimg.png"
     },
     {
         "merged": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png",
@@ -74,6 +82,10 @@
     {
         "merged": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
         "source": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc.png",
+        "source": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\src\\main\\res\\drawable-xxxhdpi\\abc.png"
     },
     {
         "merged": "E:\\@STUDIES\\B-tech\\ThirdYear\\1stSemester\\MobileComputing\\Assignments\\Assignment1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",

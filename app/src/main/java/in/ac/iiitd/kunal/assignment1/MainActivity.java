@@ -1,5 +1,6 @@
 package in.ac.iiitd.kunal.assignment1;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -18,35 +19,46 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends AppCompatActivity {
 
-    /*
-
-
-    Toast Need to See
-    Static Analysis
-
-    */
 
     private static final String TAG = "QuizActivity";
     private static final String Value = "Value";
-    private TextView mQuestion;
+    private static final String Value1 = "Hint";
+    private static final String Value2 = "Cheat";
+    private static final String Value3 = "Press";
+    private static final String Value4 = "Check";
+    private TextView mQuestion,mHintText,mCheatText;
     private int mPressFlag = 0;
     private int mCheckFlag = 0;
     private final Context mContext = this;
     private int mValue = 0;
     private Toast mMain;
+    private int mFlagcheat=0,mFlaghint=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mHintText=(TextView)findViewById(R.id.HintText);
+        mCheatText=(TextView)findViewById(R.id.CheatText);
         mQuestion = (TextView) findViewById(R.id.textViewer);
 
-        if (savedInstanceState == null)
+        if (savedInstanceState == null) {
             mValue = GiveNumber.GetNumber();
-        else
+            mFlagcheat=0;
+            mFlaghint=0;
+        }
+        else {
             mValue = savedInstanceState.getInt(Value);
+            mFlagcheat=savedInstanceState.getInt(Value2);
+            mFlaghint=savedInstanceState.getInt(Value1);
+            mCheckFlag=savedInstanceState.getInt(Value4);
+            mPressFlag=savedInstanceState.getInt(Value3);
+        }
         String s2="Is " + mValue + " A Prime Number";
         mQuestion.setText(s2);
+
+
 
         Button mFalseButton = (Button) findViewById(R.id.FalseButton);
         mFalseButton.setOnClickListener(new View.OnClickListener() {
@@ -98,9 +110,15 @@ public class MainActivity extends AppCompatActivity {
                     mQuestion.setText(s1);
                     mPressFlag = 0;
                     mCheckFlag = 0;
-                } else if (mPressFlag == 1) {
+                    mFlaghint=0;
+                    mFlagcheat=0;
+                    mCheatText.setText("");
+                    mHintText.setText("");
+                }
+                else if (mPressFlag == 1) {
                     mMain.makeText(mContext, "Your Answer Is Wrong", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                else {
                     mMain.makeText(mContext, "Please Make A Choice", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -112,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(MainActivity.this,Hint.class);
-                startActivity(i);
+                startActivityForResult(i, 1);
             }
         });
 
@@ -122,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i=new Intent(MainActivity.this,Cheat.class);
                 i.putExtra(Value,mValue);
-                startActivity(i);
+                startActivityForResult(i, 1);
             }
         });
 
@@ -133,6 +151,10 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "Inside onSaveInstance");
         savedInstanceState.putInt(Value, mValue);
+        savedInstanceState.putInt(Value2,mFlagcheat);
+        savedInstanceState.putInt(Value1,mFlaghint);
+        savedInstanceState.putInt(Value3,mPressFlag);
+        savedInstanceState.putInt(Value4,mCheckFlag);
     }
 
 
@@ -147,8 +169,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-
         Log.d(TAG, "Inside OnStart");
+
+
 
     }
 
@@ -162,6 +185,12 @@ public class MainActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();
         Log.d(TAG, "Inside OnResume");
+        if(mFlagcheat==1) {
+            mCheatText.setText("You have Cheated");
+        }
+        if(mFlaghint==1) {
+            mHintText.setText("You have taken Hint");
+        }
 
     }
 
@@ -184,5 +213,22 @@ public class MainActivity extends AppCompatActivity {
         super.onBackPressed();
         Log.d(TAG, "Inside OnBackPressed");
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        Log.d(TAG, "Inside onActivityResult");
+
+        if (requestCode == 1) {
+            if(resultCode == Activity.RESULT_OK){
+                if(mFlaghint!=1)
+                    mFlaghint=data.getIntExtra("ValueHint",0);
+                if(mFlagcheat!=1)
+                    mFlagcheat=data.getIntExtra("ValueCheat",0);
+            }
+        }
+    }
+
 
 }

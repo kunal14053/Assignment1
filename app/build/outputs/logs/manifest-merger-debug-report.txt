@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:4:5-44
 		INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml
@@ -16,7 +16,7 @@ ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\
 		INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml
 		INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml
 application
-ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:6:5-31:19
+ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:6:5-24:19
 MERGED from [com.android.support:appcompat-v7:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:23:5-20
@@ -33,8 +33,6 @@ MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear
 		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:11:9-35
 	android:fullBackupContent
 		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:8:9-41
-	tools:ignore
-		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:13:9-48
 	android:allowBackup
 		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:7:9-35
 	android:icon
@@ -55,21 +53,14 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
 		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:18:27-74
-meta-data#com.google.android.gms.version
-ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:25:9-27:69
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:27:13-66
-	android:name
-		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:26:13-58
 activity#in.ac.iiitd.kunal.assignment1.Hint
-ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:29:9-42
+ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:22:9-42
 	android:name
-		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:29:19-39
+		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:22:19-39
 activity#in.ac.iiitd.kunal.assignment1.Cheat
-ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:30:9-52
+ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:23:9-42
 	android:name
-		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:30:19-40
+		ADDED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml:23:19-40
 uses-sdk
 INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.1.1] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:21:5-23:78
@@ -90,3 +81,9 @@ MERGED from [com.android.support:support-v4:24.1.1] E:\@STUDIES\B-tech\ThirdYear
 	android:minSdkVersion
 		INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml
 		INJECTED from E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\src\main\AndroidManifest.xml
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:8.1.0] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:8.1.0] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:8.1.0] E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:22:13-58
