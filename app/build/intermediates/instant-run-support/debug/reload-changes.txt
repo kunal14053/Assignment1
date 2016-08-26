@@ -1,7 +1,0 @@
-CHANGED,E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\in\ac\iiitd\kunal\assignment1\MainActivity$override.class
-CHANGED,E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\in\ac\iiitd\kunal\assignment1\MainActivity$2$override.class
-CHANGED,E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\in\ac\iiitd\kunal\assignment1\MainActivity$1$override.class
-CHANGED,E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\in\ac\iiitd\kunal\assignment1\MainActivity$4$override.class
-CHANGED,E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\in\ac\iiitd\kunal\assignment1\MainActivity$3$override.class
-CHANGED,E:\@STUDIES\B-tech\ThirdYear\1stSemester\MobileComputing\Assignments\Assignment1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\in\ac\iiitd\kunal\assignment1\MainActivity$5$override.class
